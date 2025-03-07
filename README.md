@@ -26,34 +26,30 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 > First ensure that you can get the project running. You should see a simple page that says "Your code here" in your browser
 
-At Gaia we can offer our members a loan to help pay for their treatment. We would like you to create a simple loan application flow with the following requirements:
+At Gaia we offer our prospects payment plans to help pay for their treatment. We would like you to create a simple application for a prospect to apply for our payment plans. Consider [this Figma](https://www.figma.com/design/ocQBX5nkoP32ErHSYBoFCN/Frontent-Engineer-Interview-Task?node-id=0-42&t=y1jSwhDWWQhUhc5l-1) as the requirement.
 
 ### Requirements
 
-1. Create a form page that collects the following information from the member:
-   - Monthly income (number)
-   - Housing status (dropdown: "Renting" or "Owner")
-   - Monthly expenses (number)
-   - Outstanding loans (dynamic array of amounts)
-     - Allow users to add/remove multiple outstanding loan amounts
-   - First name (text)
-   - Last name (text)
+1. Create a sign up page with a form that collects the following information from the prospect:
+   - Full name (text)
+   - Phone number (text)
    - Email (text)
+   - Date of birth (date)
+   - Which treatment are you considering? (choice)
+   - When are you planning to start your treatment? (date)
 
 2. The form should include basic validation:
    - All fields are required
-   - Income and expenses must be positive numbers
-   - Email must be in a valid format
+   - Email and phone number must be in a valid format. Assume US phone number.
 
 3. When the form is submitted:
-   - Send a POST request to `/api/loan-application`
-    * You do not need to implement a loan application calculation, you can mock the endpoint
-   - Redirect to a confirmation page
+   - Send a POST request to `/api/ivf-sign-up`
+    * You do not need to implement any calculation, you can mock the endpoint
+   - Redirect to the pricing page
 
-4. Create a confirmation page that:
-   - Thanks the user for their application
-   - Displays a friendly message that we'll be in touch shortly
-   - Shows a reference number (can be randomly generated)
+4. Create the Pricing Page that:
+   - Thanks shows a success message to the user and proposes a Gaia plan and the next steps as indicated in the Figma design
+   - The numerical values (like $ price per month from) can be randomly generated
 
 ### Technical Requirements
 
@@ -74,6 +70,7 @@ At Gaia we can offer our members a loan to help pay for their treatment. We woul
 
 ### What We're Looking For
 
+- Adherence to the design in the Figma file
 - Clean, maintainable code
 - Proper TypeScript usage
 - Good component structure
