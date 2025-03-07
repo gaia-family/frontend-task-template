@@ -80,4 +80,4 @@ At Gaia we offer our prospects payment plans to help pay for their treatment. We
 
 ### Time Expectation
 
-This task should take approximately 4-5 hours to complete. Focus on implementing the core requirements first before adding any extra features.
+This task should take approximately 2-3 hours to complete. Focus on implementing the core requirements first before adding any extra features.
